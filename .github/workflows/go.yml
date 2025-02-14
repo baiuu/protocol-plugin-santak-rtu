@@ -34,3 +34,9 @@ jobs:
       run: |
         cd cmd
         go test -v ./...
+
+    - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact  
+          path: cmd/protocol-plugin-santak-rtu  
