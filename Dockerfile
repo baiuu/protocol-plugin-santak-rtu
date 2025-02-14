@@ -1,4 +1,4 @@
-FROM docker.m.daocloud.io/library/golang:alpine
+FROM golang:alpine
 WORKDIR $GOPATH/src/app
 ADD . ./
 ENV GO111MODULE=on
