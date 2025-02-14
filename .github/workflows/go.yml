@@ -28,15 +28,15 @@ jobs:
     - name: Build
       run: |
         cd cmd
-        go build -v ./...
+        go build -v -o protocol-plugin-santak-rtu
 
     - name: Test
       run: |
         cd cmd
-        go test -v ./...
+        go test -v -o protocol-plugin-santak-rtu
 
     - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-artifact  
-          path: cmd/protocol-plugin-santak-rtu  
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-artifact  
+        path: cmd/protocol-plugin-santak-rtu  
