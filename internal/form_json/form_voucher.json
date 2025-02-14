@@ -1,0 +1,13 @@
+[
+    {
+        "dataKey": "santak_reg_pkg",
+        "label": "注册包或心跳包(ASCII)",
+        "placeholder": "please input the registration package",
+        "type": "input",
+        "validate": {
+            "message": "The Registration Package cannot be empty",
+            "required": true,
+            "type": "string"
+        }
+    }
+]

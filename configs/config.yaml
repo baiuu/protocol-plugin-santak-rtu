@@ -1,0 +1,21 @@
+# configs/config.yaml
+server:
+  port: 5300
+  httpPort: 4441
+  maxConnections: 100
+  heartbeatTimeout: 60 
+
+platform:
+  url: "http://127.0.0.1:9999"
+  mqttBroker: "mqtt://127.0.0.1:1883"
+  mqttUsername: "plugin"
+  mqttPassword: "plugin"
+  serviceIdentifier: "SANTAK-RTU"  # 添加服务标识符
+
+log:
+  level: "info"
+  filePath: "logs/app.log"
+  maxSize: 100
+  maxBackups: 3
+  maxAge: 28
+  compress: true
