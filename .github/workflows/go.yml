@@ -39,6 +39,6 @@ jobs:
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: protocol-plugin-santak-rtu_{{ matrix.goos }}_{{ matrix.goarch }}
+        name: protocol-plugin-santak-rtu_${{ matrix.goos }}_${{ matrix.goarch }}
         path: cmd/protocol-plugin-santak-rtu
         if-no-files-found: warn
