@@ -39,5 +39,5 @@ jobs:
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: build-artifact-${{ github.sha }}
+        name: build-artifact-${{ github.run_id }}
         path: cmd/protocol-plugin-santak-rtu
